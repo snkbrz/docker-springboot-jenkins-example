@@ -6,7 +6,7 @@
       state: present
    - name: Install docker-py
      apt:
-      name: python-docker
+      name: python3-docker
       state: present
    - name: Start the container
      docker_container:
