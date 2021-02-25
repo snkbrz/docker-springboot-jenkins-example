@@ -14,5 +14,5 @@
         image: "192.168.70.24:5000/springboot-jenkins-example:latest"
         state: started
         publish_ports:
-           - 0.0.0.0:8080:8080
+           - 0.0.0.0:8080:8080/tcp
 
