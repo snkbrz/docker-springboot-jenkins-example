@@ -1,4 +1,4 @@
-t- hosts: dev
+- hosts: dev
   tasks:
    - name: Install python pip
      apt:
