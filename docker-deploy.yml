@@ -1,18 +1,18 @@
---
--hosts: dev
-tasks:
-  - name: Install python pip
-    apt:
-     name: python-pip
-     state: present
+- hosts: dev
+  tasks:
+   - name: Install python pip
+     apt:
+      name: python-pip
+      state: present
    - name: Install docker-py
      apt:
-     name: docker-py
-     state: present
-    - name: Start the container
-      docker_container:
+      name: python-docker
+      state: present
+   - name: Start the container
+     docker_container:
         name: example-homolog
         image: "192.168.70.24:5000/springboot-jenkins-example:latest"
         state: started
         publish_ports:
            - 0.0.0.0:8080:8080
+
