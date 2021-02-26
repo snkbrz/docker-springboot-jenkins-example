@@ -12,7 +12,7 @@
      docker_container:
         name: example-homolog
         image: "192.168.70.24:5000/springboot-jenkins-example:latest"
-        state: present
+        state: started
         ports:
            - 0.0.0.0:8080:8080
 
