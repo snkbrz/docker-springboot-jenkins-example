@@ -16,7 +16,7 @@
    - name: Start the container
      docker_container:
         name: example-homolog
-        image: "192.168.70.24:5000/springboot-jenkins-example:latest"
+        image: "192.168.70.24:5000/springboot-jenkins-example"
         state: started
         recreate: yes
         ports:
