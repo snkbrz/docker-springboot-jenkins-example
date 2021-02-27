@@ -8,6 +8,11 @@
      apt:
       name: python3-docker
       state: present
+   - name: Pull Flask app  image
+     docker_image:
+        name: "192.168.70.24:5000/springboot-jenkins-example"
+        tag: latest
+        state: present 
    - name: Start the container
      docker_container:
         name: example-homolog
