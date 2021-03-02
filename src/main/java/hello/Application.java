@@ -11,7 +11,7 @@ public class Application {
 
 	@RequestMapping("/")
 	public String home() {
-		return "Hello Docker Worldv10";
+		return "Hello Docker Worldv11";
 	}
 
 	@RequestMapping("/bca")
